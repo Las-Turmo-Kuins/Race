@@ -29,9 +29,20 @@ bool ModuleSceneIntro::Start()
 	//x es la y de blender
 	//y es la z
 	//z es la x
-	//c1 = Cube(156, 2, 156);
-	//c1.SetPos(0, -1, 0);
-	//c1.Render();
+	/*c0 = Cube(1, 4, 10);
+	c0.SetPos(5.5, 9.17637, 23.0329);
+	c0.SetRotation(-15, vec3 (1, 0, 0));
+	pBodyCube = App->physics->AddBody(c0,0);
+	c0.physbody = pBodyCube;*/
+
+	//x es la z
+	//y es la x
+	//z es la y
+	c1 = Cube(10, 1, 10);
+	c1.SetPos(0, 4.67638, 28.0328);
+	c1.SetRotation(0, vec3(1, 0, 0));
+	pBodyCube = App->physics->AddBody(c1, 0);
+	c1.physbody = pBodyCube;
 
 	return ret;
 }
@@ -52,6 +63,7 @@ update_status ModuleSceneIntro::Update(float dt)
 	p.Render();
 
 	c1.Render();
+	c2.Render();
 
 	return UPDATE_CONTINUE;
 }
@@ -59,9 +71,3 @@ update_status ModuleSceneIntro::Update(float dt)
 void ModuleSceneIntro::OnCollision(PhysBody3D* body1, PhysBody3D* body2)
 {
 }
-
-void CreateRectangle(vec3 position)
-{
-	Cube* c;
-	c = new Cube(156, 2, 156);
-};

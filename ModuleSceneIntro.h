@@ -21,8 +21,6 @@ public:
 
 	void OnCollision(PhysBody3D* body1, PhysBody3D* body2);
 
-	void CreateRectangle();
-
 public:
 	/*
 	PhysBody3D* pb_snake[MAX_SNAKE];
@@ -33,6 +31,7 @@ public:
 	*/
 
 	PhysBody3D* pb_chassis;
+	PhysBody3D* pBodyCube;
 	Cube p_chassis;
 
 	PhysBody3D* pb_wheel;
@@ -43,7 +42,9 @@ public:
 
 	PhysMotor3D* left_wheel;
 	PhysMotor3D* right_wheel;
+	Cube c0;
 	Cube c1;
+	Cube c2;
 
 	PhysBody3D* sensor_cube;
 };
