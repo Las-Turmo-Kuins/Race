@@ -108,7 +108,7 @@ bool ModulePlayer::Start()
 
 	// Wheel properties ---------------------------------------
 	float connection_height = 1.2f;
-	float wheel_radius = 0.6f;
+	float wheel_radius = 0.8f;
 	float wheel_width = 0.5f;
 	float suspensionRestLength = 1.2f;
 
@@ -191,6 +191,7 @@ bool ModulePlayer::CleanUp()
 update_status ModulePlayer::Update(float dt)
 {
 	turn = acceleration = brake = 0.0f;
+
 	if (App->input->GetKey(SDL_SCANCODE_R) == KEY_DOWN)
 	{
 		marchaatras = !marchaatras;

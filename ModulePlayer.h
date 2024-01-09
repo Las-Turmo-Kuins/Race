@@ -33,5 +33,7 @@ public:
 
 	bool marchaatras = false;
 
+	float altura = 1.0f;
+
 	const btVector3 newg = { 0.0f, -1.0f, 0.0f };
 };
