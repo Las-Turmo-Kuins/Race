@@ -25,6 +25,14 @@ bool ModuleSceneIntro::Start()
 	sensor_cube->SetAsSensor(true);
 	sensor_cube->SetPos(0, 3, 0);
 
+
+	//x es la y de blender
+	//y es la z
+	//z es la x
+	//c1 = Cube(156, 2, 156);
+	//c1.SetPos(0, -1, 0);
+	//c1.Render();
+
 	return ret;
 }
 
@@ -43,6 +51,8 @@ update_status ModuleSceneIntro::Update(float dt)
 	p.axis = true;
 	p.Render();
 
+	c1.Render();
+
 	return UPDATE_CONTINUE;
 }
 
@@ -50,3 +60,8 @@ void ModuleSceneIntro::OnCollision(PhysBody3D* body1, PhysBody3D* body2)
 {
 }
 
+void CreateRectangle(vec3 position)
+{
+	Cube* c;
+	c = new Cube(156, 2, 156);
+};
