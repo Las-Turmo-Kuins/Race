@@ -18,8 +18,6 @@ bool ModulePlayer::Start()
 {
 	LOG("Loading player");
 
-	VehicleInfo car;
-
 	 //Car properties ----------------------------------------
 	 //Hitbox
 	car.chassis1_size.Set(3.5f, 3, 7);
@@ -224,6 +222,10 @@ update_status ModulePlayer::Update(float dt)
 		brake = BRAKE_POWER;
 	}
 
+	if (App->input->GetKey(SDL_SCANCODE_F1) == KEY_DOWN)
+	{
+		 car.mass = 20.0f;
+	}
 	vehicle->ApplyEngineForce(acceleration);
 	vehicle->Turn(turn);
 	vehicle->Brake(brake);

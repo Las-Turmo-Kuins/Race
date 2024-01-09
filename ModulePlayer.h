@@ -2,6 +2,9 @@
 #include "Module.h"
 #include "Globals.h"
 #include "p2Point.h"
+#include "Primitive.h"
+#include "PhysVehicle3D.h"
+#include "PhysBody3D.h"
 
 struct PhysVehicle3D;
 
@@ -21,8 +24,9 @@ public:
 	bool CleanUp();
 
 public:
-
 	PhysVehicle3D* vehicle;
+	VehicleInfo car;
+
 	float turn;
 	float acceleration;
 	float brake;

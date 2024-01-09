@@ -1,2 +1,6 @@
-﻿  PhysVehicle3D.cpp
+﻿  ModulePlayer.cpp
+C:\Users\izansl\Documents\GitHub\Race\ModulePlayer.cpp(246,99): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\izansl\Documents\GitHub\Race\ModulePlayer.cpp(246,72): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\izansl\Documents\GitHub\Race\ModulePlayer.cpp(247,99): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\izansl\Documents\GitHub\Race\ModulePlayer.cpp(247,72): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   3D Physics.vcxproj -> C:\Users\izansl\Documents\GitHub\Race\Debug\3D Physics - class6.exe
