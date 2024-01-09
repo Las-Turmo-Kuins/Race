@@ -174,7 +174,7 @@ bool ModulePlayer::Start()
 
 	vehicle = App->physics->AddVehicle(car);
 	vehicle->collision_listeners.add(this); // Add this module as listener to callbacks from vehicle
-	vehicle->SetPos(0, 12, 10);
+	vehicle->SetPos(0, 0, 10);
 
 	return true;
 }
@@ -191,17 +191,26 @@ bool ModulePlayer::CleanUp()
 update_status ModulePlayer::Update(float dt)
 {
 	turn = acceleration = brake = 0.0f;
-
+	if (App->input->GetKey(SDL_SCANCODE_R) == KEY_DOWN)
+	{
+		marchaatras = !marchaatras;
+	}
 	if(App->input->GetKey(SDL_SCANCODE_UP) == KEY_REPEAT)
 	{
-		
-		if (App->input->GetKey(SDL_SCANCODE_LSHIFT) == KEY_REPEAT)
+		if (!marchaatras)
 		{
-			acceleration = MAX_ACCELERATION * 20;
+			if (App->input->GetKey(SDL_SCANCODE_LSHIFT) == KEY_REPEAT)
+			{
+				acceleration = MAX_ACCELERATION * 20;
+			}
+			else
+			{
+				acceleration = MAX_ACCELERATION;
+			}
 		}
 		else
 		{
-			acceleration = MAX_ACCELERATION;
+			brake = BRAKE_POWER;
 		}
 	}
 
@@ -219,13 +228,36 @@ update_status ModulePlayer::Update(float dt)
 
 	if(App->input->GetKey(SDL_SCANCODE_DOWN) == KEY_REPEAT)
 	{
-		brake = BRAKE_POWER;
+		if (marchaatras)
+		{
+			acceleration = -MAX_ACCELERATION;
+		}
+		else
+		{
+			brake = BRAKE_POWER;
+		}
 	}
 
 	if (App->input->GetKey(SDL_SCANCODE_F1) == KEY_DOWN)
 	{
 		 car.mass = 20.0f;
 	}
+
+	if (App->input->GetKey(SDL_SCANCODE_F2) == KEY_DOWN)
+	{
+		App->physics->world->setGravity(newg);
+	}
+
+	if (App->input->GetKey(SDL_SCANCODE_F3) == KEY_DOWN)
+	{
+		vehicle->ApplyEngineForce(0.0f);
+	}
+
+	if (App->input->GetKey(SDL_SCANCODE_F4) == KEY_DOWN)
+	{
+		vehicle->SetPos(0, 0, 10);
+	}
+
 	vehicle->ApplyEngineForce(acceleration);
 	vehicle->Turn(turn);
 	vehicle->Brake(brake);

@@ -30,4 +30,8 @@ public:
 	float turn;
 	float acceleration;
 	float brake;
+
+	bool marchaatras = false;
+
+	const btVector3 newg = { 0.0f, -1.0f, 0.0f };
 };
