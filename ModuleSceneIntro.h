@@ -42,6 +42,21 @@ public:
 	PhysMotor3D* left_wheel;
 	PhysMotor3D* right_wheel;
 
+	Cube c0;
+	Cube c1;
+	Cube c2;
+	Cube c3;
+	Cube c4;
+	Cube c5;
+	Cube c6;
+	Cube c7;
+	Cube c8;
+	Cube c9;
+	Cube c10;
+	Cube c11;
+	Cube c12;
+	Cube c13;
+
 
 	PhysBody3D* sensor_cube;
 };
