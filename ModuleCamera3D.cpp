@@ -11,7 +11,7 @@ ModuleCamera3D::ModuleCamera3D(Application* app, bool start_enabled) : Module(ap
 	Y = vec3(0.0f, 1.0f, 0.0f);
 	Z = vec3(0.0f, 0.0f, 1.0f);
 
-	Position = vec3(0.0f, 0.0f, 5.0f);
+	Position = vec3(0.0f, 0.0f, 0.0f);
 	Reference = vec3(0.0f, 0.0f, 0.0f);
 }
 
@@ -95,6 +95,17 @@ update_status ModuleCamera3D::Update(float dt)
 
 		Position = Reference + Z * length(Position);
 	}
+
+	const btVector3& carpos = App->player->vehicle->vehicle->getChassisWorldTransform().getOrigin();
+	vec3 carPosVec3(carpos.getX(), carpos.getY() + 5 , carpos.getZ());
+
+	const btVector3& carRot = App->player->vehicle->vehicle->getForwardVector();
+	vec3 carRotVec3(carRot.getX(), carRot.getY(), carRot.getZ());
+	LOG("%f", carRot.getY());
+
+	LookAt(carPosVec3);
+	Position = carPosVec3 - carRotVec3 * 20;
+	
 
 	// Recalculate matrix -------------
 	CalculateViewMatrix();

@@ -108,7 +108,7 @@ bool ModulePlayer::Start()
 
 	// Wheel properties ---------------------------------------
 	float connection_height = 1.2f;
-	float wheel_radius = 0.6f;
+	float wheel_radius = 1;
 	float wheel_width = 0.5f;
 	float suspensionRestLength = 1.2f;
 
@@ -197,6 +197,7 @@ update_status ModulePlayer::Update(float dt)
 	}
 	if(App->input->GetKey(SDL_SCANCODE_UP) == KEY_REPEAT)
 	{
+		marchaatras = false;
 		if (!marchaatras)
 		{
 			if (App->input->GetKey(SDL_SCANCODE_LSHIFT) == KEY_REPEAT)
@@ -228,6 +229,7 @@ update_status ModulePlayer::Update(float dt)
 
 	if(App->input->GetKey(SDL_SCANCODE_DOWN) == KEY_REPEAT)
 	{
+		marchaatras = true;
 		if (marchaatras)
 		{
 			acceleration = -MAX_ACCELERATION;

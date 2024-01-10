@@ -59,7 +59,18 @@ public:
 	Cube c11;
 	Cube c12;
 	Cube c13;
-
+	Cube c14;
+	Cube c15;
+	Cube c16;
+	Cube c17;
+	Cube c18;
+	Cube c19;
+	Cube c20;
+	Cube c21;
+	Cube c22;
+	Cube c23;
+	Cube c24;
+	Cube c25;
 
 	PhysBody3D* sensor_cube;
 };
