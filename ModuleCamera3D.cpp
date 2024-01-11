@@ -101,9 +101,12 @@ update_status ModuleCamera3D::Update(float dt)
 
 	const btVector3& carRot = App->player->vehicle->vehicle->getForwardVector();
 	vec3 carRotVec3(carRot.getX(), carRot.getY(), carRot.getZ());
+
 	LOG("%f", carRot.getY());
 
-	LookAt(carPosVec3);
+	vec3 lookAtPos = carPosVec3 + vec3(carRot.getX(), carRot.getY(), carRot.getZ()) * 10.0f;
+
+	LookAt(lookAtPos);
 	Position = carPosVec3 - carRotVec3 * 20;
 	
 
