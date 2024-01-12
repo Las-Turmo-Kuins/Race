@@ -784,6 +784,7 @@ update_status ModuleSceneIntro::Update(float dt)
 	c63.Render();
 	c64.Render();
 	c65.Render();
+	c66.Render();
 	c67.Render();
 	c68.Render();
 	c69.Render();

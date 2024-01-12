@@ -20,7 +20,7 @@ bool ModulePlayer::Start()
 
 	 //Car properties ----------------------------------------
 	 //Hitbox
-	car.chassis1_size.Set(3.5f, 1, 5);
+	car.chassis1_size.Set(3.5f, 3, 7);
 	// Respaldo
 	car.chassis2_size.Set(2, 2, 0.5f);
 	// Asiento
@@ -110,7 +110,7 @@ bool ModulePlayer::Start()
 	float connection_height = 1.2f;
 	float wheel_radius = 1;
 	float wheel_width = 1;
-	float suspensionRestLength = 0.5f;
+	float suspensionRestLength = 1.2f;
 
 	// Don't change anything below this line ------------------
 
