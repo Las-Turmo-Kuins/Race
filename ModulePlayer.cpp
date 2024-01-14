@@ -174,7 +174,7 @@ bool ModulePlayer::Start()
 
 	vehicle = App->physics->AddVehicle(car);
 	vehicle->collision_listeners.add(this); // Add this module as listener to callbacks from vehicle
-	vehicle->SetPos(0, 0, 10);
+	vehicle->SetPos(557.26, 53, 28.441);
 
 	return true;
 }
@@ -191,28 +191,14 @@ bool ModulePlayer::CleanUp()
 update_status ModulePlayer::Update(float dt)
 {
 	turn = acceleration = brake = 0.0f;
+
 	if (App->input->GetKey(SDL_SCANCODE_R) == KEY_DOWN)
 	{
-		marchaatras = !marchaatras;
+		brake = BRAKE_POWER;
 	}
 	if(App->input->GetKey(SDL_SCANCODE_UP) == KEY_REPEAT)
 	{
-		marchaatras = false;
-		if (!marchaatras)
-		{
-			if (App->input->GetKey(SDL_SCANCODE_LSHIFT) == KEY_REPEAT)
-			{
-				acceleration = MAX_ACCELERATION * 20;
-			}
-			else
-			{
-				acceleration = MAX_ACCELERATION;
-			}
-		}
-		else
-		{
-			brake = BRAKE_POWER;
-		}
+		acceleration = MAX_ACCELERATION;
 	}
 
 	if(App->input->GetKey(SDL_SCANCODE_LEFT) == KEY_REPEAT)
@@ -229,15 +215,7 @@ update_status ModulePlayer::Update(float dt)
 
 	if(App->input->GetKey(SDL_SCANCODE_DOWN) == KEY_REPEAT)
 	{
-		marchaatras = true;
-		if (marchaatras)
-		{
-			acceleration = -MAX_ACCELERATION;
-		}
-		else
-		{
-			brake = BRAKE_POWER;
-		}
+		acceleration = -MAX_ACCELERATION;
 	}
 
 	if (App->input->GetKey(SDL_SCANCODE_F1) == KEY_DOWN)
