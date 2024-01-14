@@ -17,7 +17,6 @@ ModulePlayer::~ModulePlayer()
 bool ModulePlayer::Start()
 {
 	LOG("Loading player");
-
 	// Sound efect
 	engine = App->audio->LoadFx("Assets/Claxon.wav");
 
@@ -177,7 +176,7 @@ bool ModulePlayer::Start()
 
 	vehicle = App->physics->AddVehicle(car);
 	vehicle->collision_listeners.add(this); // Add this module as listener to callbacks from vehicle
-	vehicle->SetPos(260, -0.499997, 28.3756);
+	vehicle->SetPos(345.469, 141.137, 158.411);
 
 	return true;
 }
