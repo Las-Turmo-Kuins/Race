@@ -1725,7 +1725,7 @@ bool ModuleSceneIntro::Start()
 	//x es la z
 	//y es la x
 	//z es la y
-	c180 = Cube(200.0, 1, 20);
+	c180 = Cube(200.0, 1, 100);
 	c180.SetPos(203.581, -0.499997, 28.3756);
 	pBodyCube = App->physics->AddBody(c180, 0);
 	c180.physbody = pBodyCube;
