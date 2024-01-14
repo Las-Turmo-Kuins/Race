@@ -33,5 +33,8 @@ public:
 
 	bool marchaatras = false;
 
+	//Sound efect
+	uint engine;
+
 	const btVector3 newg = { 0.0f, -1.0f, 0.0f };
 };

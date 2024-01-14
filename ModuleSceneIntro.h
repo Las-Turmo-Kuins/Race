@@ -44,6 +44,9 @@ public:
 
 	PhysBody3D* pBodyCube;
 
+	//Music
+	uint music;
+
 
 	Cube c0;
 	Cube c1;

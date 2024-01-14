@@ -18,6 +18,9 @@ bool ModulePlayer::Start()
 {
 	LOG("Loading player");
 
+	// Sound efect
+	engine = App->audio->LoadFx("Assets/Claxon.wav");
+
 	 //Car properties ----------------------------------------
 	 //Hitbox
 	car.chassis1_size.Set(3.5f, 3, 7);
@@ -174,7 +177,7 @@ bool ModulePlayer::Start()
 
 	vehicle = App->physics->AddVehicle(car);
 	vehicle->collision_listeners.add(this); // Add this module as listener to callbacks from vehicle
-	vehicle->SetPos(557.26, 53, 28.441);
+	vehicle->SetPos(0, 0, 0);
 
 	return true;
 }
@@ -236,6 +239,12 @@ update_status ModulePlayer::Update(float dt)
 	if (App->input->GetKey(SDL_SCANCODE_F4) == KEY_DOWN)
 	{
 		vehicle->SetPos(0, 0, 10);
+	}
+
+	// Carga un fx con el 
+	if (App->input->GetKey(SDL_SCANCODE_SPACE) == KEY_DOWN)
+	{
+		App->audio->PlayFx(engine);
 	}
 
 	vehicle->ApplyEngineForce(acceleration);

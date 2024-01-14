@@ -14,6 +14,9 @@ ModuleSceneIntro::~ModuleSceneIntro()
 // Load assets
 bool ModuleSceneIntro::Start()
 {
+	//Music
+	App->audio->PlayMusic("Assets/Music.wav", 1.0f);
+
 	LOG("Loading Intro assets");
 	bool ret = true;
 
