@@ -739,7 +739,7 @@ bool ModuleSceneIntro::Start()
 	c76.SetRotation(-15, vec3(0, 0, 1));
 	pBodyCube = App->physics->AddBody(c76, 0);
 	c76.physbody = pBodyCube;
-	//Augmenta el coeficient de fricció
+	//Augmenta el coeficient de fricciÃ³
 
 	//x es la z
 	//y es la x
@@ -1288,7 +1288,7 @@ bool ModuleSceneIntro::Start()
 	//x es la z
 	//y es la x
 	//z es la y
-	c134 = Cube(20, 1, 10);
+	c134 = Cube(20, 1, 5);
 	c134.SetPos(130.365 , 161.581 , 320.273 );
 	c134.SetRotation(-30, vec3(1, 0, 0));
 	pBodyCube = App->physics->AddBody(c134, 0);
