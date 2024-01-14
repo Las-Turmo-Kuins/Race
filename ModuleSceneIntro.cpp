@@ -1279,7 +1279,7 @@ bool ModuleSceneIntro::Start()
 	//x es la z
 	//y es la x
 	//z es la y
-	c134 = Cube(20, 1, 40);
+	c134 = Cube(20, 1, 5);
 	c134.SetPos(130.365 , 161.581 , 320.273 );
 	c134.SetRotation(-30, vec3(1, 0, 0));
 	pBodyCube = App->physics->AddBody(c134, 0);
