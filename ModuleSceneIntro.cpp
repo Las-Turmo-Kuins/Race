@@ -1257,227 +1257,354 @@ bool ModuleSceneIntro::Start()
 	//x es la z
 	//y es la x
 	//z es la y
-	c115 = Cube(20, 1, 100);
-	c115.SetPos(130.365 , 302.209, 243.853);
-	c115.SetRotation(75, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c115, 0);
-	c115.physbody = pBodyCube;
+	c135 = Cube(20, 1, 10);
+	c135.SetPos(130.365 , 160.264 , 312.858 );
+	c135.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c135, 0);
+	c135.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c116 = Cube(20, 1, 40);
-	c116.SetPos(130.365 , 438.253, 129.022);
-	c116.SetRotation(15, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c116, 0);
-	c116.physbody = pBodyCube;
+	c136 = Cube(20, 1, 5);
+	c136.SetPos(130.365 , 161.581 , 305.443 );
+	c136.SetRotation(30, vec3(1, 0, 0));
+	pBodyCube = App->physics->AddBody(c136, 0);
+	c136.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c117 = Cube(20, 1, 40);
-	c117.SetPos(310.365, 423.127, 165.54);
-	c117.SetRotation(30, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c117, 0);
-	c117.physbody = pBodyCube;
+	c137 = Cube(20, 1, 5);
+	c137.SetPos(130.365 , 162.764 , 301.028 );
+	c137.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c137, 0);
+	c137.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c118 = Cube(20, 1, 40);
-	c118.SetPos(310.365, 399.064, 196.899);
-	c118.SetRotation(45, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c118, 0);
-	c118.physbody = pBodyCube;
+	c138 = Cube(20, 1, 5);
+	c138.SetPos(130.365, 161.581 , 296.613 );
+	c138.SetRotation(-30, vec3(1, 0, 0));
+	pBodyCube = App->physics->AddBody(c138, 0);
+	c138.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c119 = Cube(20, 1, 40);
-	c119.SetPos(310.365, 367.705, 220.962);
-	c119.SetRotation(60, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c119, 0);
-	c119.physbody = pBodyCube;
+	c139 = Cube(20, 1, 10);
+	c139.SetPos(130.365, 160.264 , 289.198 );
+	c139.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c139, 0);
+	c139.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c110 = Cube(20, 1, 40);
-	c110.SetPos(310.365, 443.412, 89.8325);
-	c110.SetRotation(0, vec3(0, 0, 0));
-	pBodyCube = App->physics->AddBody(c110, 0);
-	c110.physbody = pBodyCube;
+	c140 = Cube(20, 1, 5);
+	c140.SetPos(130.365, 161.581 , 281.783 );
+	c140.SetRotation(30, vec3(1, 0, 0));
+	pBodyCube = App->physics->AddBody(c140, 0);
+	c140.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c111 = Cube(20, 1, 40);
-	c111.SetPos(310.365, 438.253, 129.022);
-	c111.SetRotation(15, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c111, 0);
-	c111.physbody = pBodyCube;
+	c141 = Cube(20, 1, 5);
+	c141.SetPos(130.365, 162.764 , 277.368 );
+	c141.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c141, 0);
+	c141.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c112 = Cube(20, 1, 40);
-	c112.SetPos(310.365, 423.127, 165.54);
-	c112.SetRotation(30, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c112, 0);
-	c112.physbody = pBodyCube;
+	c142 = Cube(20, 1, 5);
+	c142.SetPos(130.365, 161.581 , 272.953 );
+	c142.SetRotation(-30, vec3(1, 0, 0));
+	pBodyCube = App->physics->AddBody(c142, 0);
+	c142.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c113 = Cube(20, 1, 40);
-	c113.SetPos(310.365, 399.064, 196.899);
-	c113.SetRotation(45, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c113, 0);
-	c113.physbody = pBodyCube;
+	c143 = Cube(20, 1, 10);
+	c143.SetPos(130.365, 160.264 , 265.538 );
+	c143.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c143, 0);
+	c143.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c114 = Cube(20, 1, 40);
-	c114.SetPos(310.365, 367.705, 220.962);
-	c114.SetRotation(60, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c114, 0);
-	c114.physbody = pBodyCube;
+	c144 = Cube(20, 1, 5);
+	c144.SetPos(130.365, 161.581, 258.123 );
+	c144.SetRotation(30, vec3(1, 0, 0));
+	pBodyCube = App->physics->AddBody(c144, 0);
+	c144.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c115 = Cube(20, 1, 100);
-	c115.SetPos(310.365, 302.209, 243.853);
-	c115.SetRotation(75, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c115, 0);
-	c115.physbody = pBodyCube;
+	c145 = Cube(20, 1, 5);
+	c145.SetPos(130.365, 162.764, 253.708 );
+	c145.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c145, 0);
+	c145.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c116 = Cube(20, 1, 40);
-	c116.SetPos(310.365, 438.253, 129.022);
-	c116.SetRotation(15, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c116, 0);
-	c116.physbody = pBodyCube;
+	c146 = Cube(20, 1, 5);
+	c146.SetPos(130.365, 161.581, 249.292 );
+	c146.SetRotation(-30, vec3(1, 0, 0));
+	pBodyCube = App->physics->AddBody(c146, 0);
+	c146.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c117 = Cube(20, 1, 40);
-	c117.SetPos(310.365, 423.127, 165.54);
-	c117.SetRotation(30, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c117, 0);
-	c117.physbody = pBodyCube;
+	c147 = Cube(20, 1, 10);
+	c147.SetPos(130.365, 160.264, 241.877 );
+	c147.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c147, 0);
+	c147.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c118 = Cube(20, 1, 40);
-	c118.SetPos(310.365, 399.064, 196.899);
-	c118.SetRotation(45, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c118, 0);
-	c118.physbody = pBodyCube;
+	c148 = Cube(20, 1, 5);
+	c148.SetPos(130.365, 161.581, 234.462 );
+	c148.SetRotation(30, vec3(1, 0, 0));
+	pBodyCube = App->physics->AddBody(c148, 0);
+	c148.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c119 = Cube(20, 1, 40);
-	c119.SetPos(310.365, 367.705, 220.962);
-	c119.SetRotation(60, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c119, 0);
-	c119.physbody = pBodyCube;
+	c149 = Cube(20, 1, 5);
+	c149.SetPos(130.365, 162.764, 230.047 );
+	c149.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c149, 0);
+	c149.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c110 = Cube(20, 1, 40);
-	c110.SetPos(310.365, 443.412, 89.8325);
-	c110.SetRotation(0, vec3(0, 0, 0));
-	pBodyCube = App->physics->AddBody(c110, 0);
-	c110.physbody = pBodyCube;
+	c150 = Cube(20, 1, 5);
+	c150.SetPos(130.365, 161.581, 225.632 );
+	c150.SetRotation(-30, vec3(1, 0, 0));
+	pBodyCube = App->physics->AddBody(c150, 0);
+	c150.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c111 = Cube(20, 1, 40);
-	c111.SetPos(310.365, 438.253, 129.022);
-	c111.SetRotation(15, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c111, 0);
-	c111.physbody = pBodyCube;
+	c151 = Cube(20, 1, 100);
+	c151.SetPos(130.365 , 160.264 , 173.217 );
+	c151.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c151, 0);
+	c151.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c112 = Cube(20, 1, 40);
-	c112.SetPos(310.365, 423.127, 165.54);
-	c112.SetRotation(30, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c112, 0);
-	c112.physbody = pBodyCube;
+	c152 = Cube(20, 1, 40);
+	c152.SetPos(130.365, 165.457 , 103.769 );
+	c152.SetRotation(15, vec3(1, 0, 0));
+	pBodyCube = App->physics->AddBody(c152, 0);
+	c152.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c113 = Cube(20, 1, 40);
-	c113.SetPos(310.365, 399.064, 196.899);
-	c113.SetRotation(45, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c113, 0);
-	c113.physbody = pBodyCube;
+	c153 = Cube(20, 1, 40);
+	c153.SetPos(130.365, 180.683 , 67.0096 );
+	c153.SetRotation(30, vec3(1, 0, 0));
+	pBodyCube = App->physics->AddBody(c153, 0);
+	c153.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c114 = Cube(20, 1, 40);
-	c114.SetPos(310.365, 367.705, 220.962);
-	c114.SetRotation(60, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c114, 0);
-	c114.physbody = pBodyCube;
+	c154 = Cube(20, 1, 100);
+	c154.SetPos(130.365, 190.75 , -131.589 );
+	c154.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c154, 0);
+	c154.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c115 = Cube(20, 1, 100);
-	c115.SetPos(310.365, 302.209, 243.853);
-	c115.SetRotation(75, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c115, 0);
-	c115.physbody = pBodyCube;
+	c155 = Cube(100, 1, 100);
+	c155.SetPos(170.365 , 190.75 , -231.589 );
+	c155.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c155, 0);
+	c155.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c116 = Cube(20, 1, 40);
-	c116.SetPos(310.365, 438.253, 129.022);
-	c116.SetRotation(15, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c116, 0);
-	c116.physbody = pBodyCube;
+	c156 = Cube(100, 1, 100);
+	c156.SetPos(270.365 , 190.75 , -231.589 );
+	c156.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c156, 0);
+	c156.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c117 = Cube(20, 1, 40);
-	c117.SetPos(310.365, 423.127, 165.54);
-	c117.SetRotation(30, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c117, 0);
-	c117.physbody = pBodyCube;
+	c157 = Cube(100, 1, 100);
+	c157.SetPos(270.365 , 190.75 , -131.589 );
+	c157.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c157, 0);
+	c157.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c118 = Cube(20, 1, 40);
-	c118.SetPos(310.365, 399.064, 196.899);
-	c118.SetRotation(45, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c118, 0);
-	c118.physbody = pBodyCube;
+	c158 = Cube(20, 1, 40);
+	c158.SetPos(200.365 , 190.75 , -91.5889 );
+	c158.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c158, 0);
+	c158.physbody = pBodyCube;
 
 	//x es la z
 	//y es la x
 	//z es la y
-	c119 = Cube(20, 1, 40);
-	c119.SetPos(310.365, 367.705, 220.962);
-	c119.SetRotation(60, vec3(1, 0, 0));
-	pBodyCube = App->physics->AddBody(c119, 0);
-	c119.physbody = pBodyCube;
+	c159 = Cube(20, 1, 40);
+	c159.SetPos(160.917 , 195.944 , -91.5889 );
+	c159.SetRotation(-15, vec3(0, 0, 1));
+	pBodyCube = App->physics->AddBody(c159, 0);
+	c159.physbody = pBodyCube;
+
+	//x es la z
+	//y es la x
+	//z es la y
+	c160 = Cube(20, 1, 100);
+	c160.SetPos(-59.8899 , 201.137 , -91.5889 );
+	c160.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c160, 0);
+	c160.physbody = pBodyCube;
+
+	//x es la z
+	//y es la x
+	//z es la y
+	c161 = Cube(100, 1, 100);
+	c161.SetPos(-159.89 , 201.137 , -51.5889 );
+	c161.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c161, 0);
+	c161.physbody = pBodyCube;
+
+	//x es la z
+	//y es la x
+	//z es la y
+	c162 = Cube(100, 1, 100);
+	c162.SetPos(-159.89 , 201.137 , 48.4111 );
+	c162.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c162, 0);
+	c162.physbody = pBodyCube;
+
+	//x es la z
+	//y es la x
+	//z es la y
+	c163 = Cube(20, 1, 100);
+	c163.SetPos(-59.8899 , 201.137 , 88.4111 );
+	c163.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c163, 0);
+	c163.physbody = pBodyCube;
+
+	//x es la z
+	//y es la x
+	//z es la y
+	c164 = Cube(100, 1, 100);
+	c164.SetPos(-40.1101 , 201.137 , 128.411 );
+	c164.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c164, 0);
+	c164.physbody = pBodyCube;
+
+	//x es la z
+	//y es la x
+	//z es la y
+	c165 = Cube(100, 1, 100);
+	c165.SetPos(120.11, 201.137 , 228.411 );
+	c165.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c165, 0);
+	c165.physbody = pBodyCube;
+
+	//x es la z
+	//y es la x
+	//z es la y
+	c166 = Cube(100, 1, 100);
+	c166.SetPos(220.11 , 201.137, 228.411 );
+	c166.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c166, 0);
+	c166.physbody = pBodyCube;
+
+	//x es la z
+	//y es la x
+	//z es la y
+	c167 = Cube(100, 1, 100);
+	c167.SetPos(300.11 , 201.137, 128.411 );
+	c167.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c167, 0);
+	c167.physbody = pBodyCube;
+
+	//x es la z
+	//y es la x
+	//z es la y
+	c168 = Cube(20, 1, 40);
+	c168.SetPos(370.11 , 201.137 , 88.4111 );
+	c168.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c168, 0);
+	c168.physbody = pBodyCube;
+
+	//x es la z
+	//y es la x
+	//z es la y
+	c169 = Cube(20, 1, 40);
+	c169.SetPos(400.11 , 201.137 , 98.4111 );
+	c169.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c169, 0);
+	c169.physbody = pBodyCube;
+
+	//x es la z
+	//y es la x
+	//z es la y
+	c170 = Cube(20, 1, 40);
+	c170.SetPos(373.039 , 191.204 , 108.411 );
+	c170.SetRotation(30, vec3(0, 0, 1));
+	pBodyCube = App->physics->AddBody(c170, 0);
+	c170.physbody = pBodyCube;
+
+	//x es la z
+	//y es la x
+	//z es la y
+	c171 = Cube(20, 1, 40);
+	c171.SetPos(345.469 , 181.137 , 118.411 );
+	c171.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c171, 0);
+	c171.physbody = pBodyCube;
+
+	//x es la z
+	//y es la x
+	//z es la y
+	c172 = Cube(20, 1, 40);
+	c172.SetPos(372.539 , 171.204 , 128.411 );
+	c172.SetRotation(-30, vec3(0, 0, 1));
+	pBodyCube = App->physics->AddBody(c172, 0);
+	c172.physbody = pBodyCube;
+
+	//x es la z
+	//y es la x
+	//z es la y
+	c173 = Cube(20, 1, 40);
+	c173.SetPos(400.11 , 161.137 , 138.411 );
+	c173.SetRotation(0, vec3(0, 0, 0));
+	pBodyCube = App->physics->AddBody(c173, 0);
+	c173.physbody = pBodyCube;
+
 	
 	
 
@@ -1605,6 +1732,79 @@ update_status ModuleSceneIntro::Update(float dt)
 	c98.Render();
 	c99.Render();
 	c100.Render();
+	c101.Render();
+	c102.Render();
+	c103.Render();
+	c104.Render();
+	c105.Render();
+	c106.Render();
+	c107.Render();
+	c108.Render();
+	c109.Render();
+	c110.Render();
+	c111.Render();
+	c112.Render();
+	c113.Render();
+	c114.Render();
+	c115.Render();
+	c116.Render();
+	c117.Render();
+	c118.Render();
+	c119.Render();
+	c120.Render();
+	c121.Render();
+	c122.Render();
+	c123.Render();
+	c124.Render();
+	c125.Render();
+	c126.Render();
+	c127.Render();
+	c128.Render();
+	c129.Render();
+	c130.Render();
+	c131.Render();
+	c132.Render();
+	c133.Render();
+	c134.Render();
+	c135.Render();
+	c136.Render();
+	c137.Render();
+	c138.Render();
+	c139.Render();
+	c140.Render();
+	c141.Render();
+	c142.Render();
+	c143.Render();
+	c144.Render();
+	c145.Render();
+	c146.Render();
+	c147.Render();
+	c148.Render();
+	c149.Render();
+	c150.Render();
+	c151.Render();
+	c152.Render();
+	c153.Render();
+	c154.Render();
+	c155.Render();
+	c156.Render();
+	c157.Render();
+	c158.Render();
+	c159.Render();
+	c160.Render();
+	c161.Render();
+	c162.Render();
+	c163.Render();
+	c164.Render();
+	c165.Render();
+	c166.Render();
+	c167.Render();
+	c168.Render();
+	c169.Render();
+	c170.Render();
+	c171.Render();
+	c172.Render();
+	c173.Render();
 
 	return UPDATE_CONTINUE;
 }
