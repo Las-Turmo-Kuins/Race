@@ -27,7 +27,7 @@ public:
 	PhysVehicle3D* vehicle;
 	VehicleInfo car;
 
-	float turn;
+	float turn = 0;
 	float acceleration;
 	float brake;
 
