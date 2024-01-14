@@ -19,6 +19,8 @@ public:
 	void SetTransform(const float* matrix) const;
 	void SetPos(float x, float y, float z);
 	void SetAsSensor(bool is_sensor);
+	//Function setfriction
+	void SetFriction(float friction);
 
 private:
 	btRigidBody* body = nullptr;

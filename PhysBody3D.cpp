@@ -57,3 +57,8 @@ void PhysBody3D::SetAsSensor(bool is_sensor)
 			body->setCollisionFlags(body->getCollisionFlags() & ~btCollisionObject::CF_NO_CONTACT_RESPONSE);
 	}
 }
+//Set friction
+void PhysBody3D::SetFriction(float friction)
+{
+	body->setFriction(friction);
+}

@@ -177,7 +177,7 @@ bool ModulePlayer::Start()
 
 	vehicle = App->physics->AddVehicle(car);
 	vehicle->collision_listeners.add(this); // Add this module as listener to callbacks from vehicle
-	vehicle->SetPos(0, 0, 0);
+	vehicle->SetPos(203.581, -0.499997, 28.3756);
 
 	return true;
 }
@@ -238,7 +238,7 @@ update_status ModulePlayer::Update(float dt)
 
 	if (App->input->GetKey(SDL_SCANCODE_F4) == KEY_DOWN)
 	{
-		vehicle->SetPos(0, 0, 10);
+		vehicle->SetPos(203.581, -0.499997, 28.3756);
 	}
 
 	// Carga un fx con el 

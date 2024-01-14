@@ -706,6 +706,9 @@ bool ModuleSceneIntro::Start()
 	c73.SetRotation(-15, vec3(0, 0 , 1));
 	pBodyCube = App->physics->AddBody(c73, 0);
 	c73.physbody = pBodyCube;
+	c73.physbody->SetFriction(-3.0f);
+	//Color rojo
+	c73.color = Green;
 
 	//x es la z 
 	//y es la x
@@ -724,6 +727,9 @@ bool ModuleSceneIntro::Start()
 	c75.SetRotation(-30, vec3(0, 0, 1));
 	pBodyCube = App->physics->AddBody(c75, 0);
 	c75.physbody = pBodyCube;
+	c75.physbody->SetFriction(5.0f);
+	//Color rojo
+	c75.color = Red;
 
 	//x es la z
 	//y es la x
@@ -733,6 +739,7 @@ bool ModuleSceneIntro::Start()
 	c76.SetRotation(-15, vec3(0, 0, 1));
 	pBodyCube = App->physics->AddBody(c76, 0);
 	c76.physbody = pBodyCube;
+	//Augmenta el coeficient de fricció
 
 	//x es la z
 	//y es la x
@@ -787,6 +794,9 @@ bool ModuleSceneIntro::Start()
 	c82.SetRotation(-45, vec3(1, 0, 0));
 	pBodyCube = App->physics->AddBody(c82, 0);
 	c82.physbody = pBodyCube;
+	c82.physbody->SetFriction(5.0f);
+	//Color rojo
+	c82.color = Red;
 
 	//x es la z
 	//y es la x
@@ -860,6 +870,9 @@ bool ModuleSceneIntro::Start()
 	c90.SetRotation(60, vec3(0, 0, 1));
 	pBodyCube = App->physics->AddBody(c90, 0);
 	c90.physbody = pBodyCube;
+	c90.physbody->SetFriction(5.0f);
+	//Color rojo
+	c90.color = Red;
 
 	//x es la z
 	//y es la x
@@ -941,6 +954,9 @@ bool ModuleSceneIntro::Start()
 	c99.SetRotation(60, vec3(1, 0, 0));
 	pBodyCube = App->physics->AddBody(c99, 0);
 	c99.physbody = pBodyCube;
+	c99.physbody->SetFriction(5.0f);
+	//Color rojo
+	c99.color = Red;
 
 	//x es la z
 	//y es la x
@@ -1040,6 +1056,9 @@ bool ModuleSceneIntro::Start()
 	//c110.SetRotation(0, vec3(0, 0, 0));
 	pBodyCube = App->physics->AddBody(c110, 0);
 	c110.physbody = pBodyCube;
+	c110.physbody->SetFriction(5.0f);
+	//Color rojo
+	c110.color = Red;
 
 	//x es la z
 	//y es la x
@@ -1058,6 +1077,9 @@ bool ModuleSceneIntro::Start()
 	c112.SetRotation(30, vec3(1, 0, 0));
 	pBodyCube = App->physics->AddBody(c112, 0);
 	c112.physbody = pBodyCube;
+	c112.physbody->SetFriction(5.0f);
+	//Color rojo
+	c112.color = Red;
 
 	//x es la z
 	//y es la x
@@ -1085,6 +1107,9 @@ bool ModuleSceneIntro::Start()
 	c115.SetRotation(60, vec3(1, 0, 0));
 	pBodyCube = App->physics->AddBody(c115, 0);
 	c115.physbody = pBodyCube;
+	c115.physbody->SetFriction(5.0f);
+	//Color rojo
+	c115.color = Red;
 
 	//x es la z
 	//y es la x
@@ -1121,6 +1146,9 @@ bool ModuleSceneIntro::Start()
 	c119.SetRotation(15, vec3(1, 0, 0));
 	pBodyCube = App->physics->AddBody(c119, 0);
 	c119.physbody = pBodyCube;
+	c119.physbody->SetFriction(5.0f);
+	//Color rojo
+	c119.color = Red;
 
 	//x es la z
 	//y es la x
@@ -1562,6 +1590,9 @@ bool ModuleSceneIntro::Start()
 	//c168.SetRotation(0, vec3(0, 0, 0));
 	pBodyCube = App->physics->AddBody(c168, 0);
 	c168.physbody = pBodyCube;
+	c168.physbody->SetFriction(5.0f);
+	//Color rojo
+	c168.color = Red;
 
 	//x es la z
 	//y es la x
